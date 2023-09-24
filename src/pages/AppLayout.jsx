@@ -1,5 +1,4 @@
 import AppNav from '../Components/AppNav.jsx';
-
 const AppLayout = () => {
   return (
     <div>
