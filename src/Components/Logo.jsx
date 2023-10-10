@@ -1,12 +1,7 @@
-import styles from './Logo.module.css';
-import { Link } from 'react-router-dom';
+import styles from "./Logo.module.css";
 
-function Logo () {
-  return (
-    <Link to={'/'}>
-      <img src='/src/logo.png' alt='WorldWise logo' className={styles.logo} />
-    </Link>
-  );
+function Logo() {
+  return <img src='/src/logo.png' alt="WorldWise logo" className={styles.logo} />;
 }
 
 export default Logo;
