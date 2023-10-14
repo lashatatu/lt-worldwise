@@ -14,6 +14,7 @@ module.exports = {
   rules: {
     'react/prop-types':'off',
     'react/jsx-key':'warn',
+    'no-unused-vars':'warn',
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
