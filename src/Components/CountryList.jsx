@@ -36,7 +36,7 @@ const CountryList = ({
   return (
     <ul className={style.countryList}>
       {countries.map((country) => (
-        <CountryItem country={country} />
+        <CountryItem country={country} key={country.country}/>
       ))}
     </ul>
   );
