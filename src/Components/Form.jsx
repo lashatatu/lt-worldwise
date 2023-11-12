@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 
 import styles from "./Form.module.css";
 import Button from "./Button.jsx";
-import { useNavigate } from "react-router-dom";
 import BackButton from "./BackButton.jsx";
 import useUrlPosition from "../hooks/useUrlPosition.js";
 import Message from "./Message.jsx";
 import Spinner from "./Spinner.jsx";
+import { flagemojiToPNG } from './CityItem.jsx';
 
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
@@ -73,7 +73,7 @@ function Form() {
           onChange={(e) => setCityName(e.target.value)}
           value={cityName}
         />
-        <span className={styles.flag}>{emoji}</span>
+        <span className={styles.flag}>{flagemojiToPNG(emoji)}</span>
       </div>
 
       <div className={styles.row}>
